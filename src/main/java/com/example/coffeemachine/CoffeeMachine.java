@@ -2,9 +2,16 @@ package com.example.coffeemachine;
 
 public class CoffeeMachine {
 
-    public void dispenseCappuccino(){
-        CoffeeDriver.dispenseCoffee();
-        CoffeeDriver.dispenseWater();
-        CoffeeDriver.dispenseMilk();
+    private final CoffeeDriver coffeeDriver;
+
+    public CoffeeMachine(CoffeeDriver coffeeDriver){
+
+        this.coffeeDriver = coffeeDriver;
+    }
+
+    public void dispense(){
+        coffeeDriver.dispenseCoffee();
+        coffeeDriver.dispenseWater();
+        coffeeDriver.dispenseMilk();
     }
 }

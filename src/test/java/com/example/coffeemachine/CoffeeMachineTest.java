@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 public class CoffeeMachineTest {
 
     @Test
-    public void shouldBrewEspresso(){
-        CoffeeMachine coffeeMachine = new CoffeeMachine();
+    public void shouldDispenseCoffee(){
+        
     }
 
 }
